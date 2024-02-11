@@ -1,4 +1,4 @@
-import { HeaderBar, LinkCart, LinkIten, Links } from './style'
+import { HeaderBar, LinkCart, LinkIten, Links } from './styles'
 
 import logo from '../../static/images/logo.svg'
 import carrinho from '../../static/images/carrinho.svg'
