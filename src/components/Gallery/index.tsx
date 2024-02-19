@@ -1,22 +1,20 @@
+import { useState } from 'react'
+
+import { GalleryItem } from '../../pages/Home/index'
+
 import Section from '../Section'
 
 import { Item, Items, Action, Modal, ModalContent } from './styles'
 
-import zelda from '../../static/images/zelda.png'
+import spider_man from '../../static/images/banner-homem-aranha.png'
 import hogwarts from '../../static/images/fundo_hogwarts.svg'
 import zoom from '../../static/images/zoom.svg'
 import play from '../../static/images/play-button.svg'
 import close from '../../static/images/close.svg'
-import { useState } from 'react'
 
 type Props = {
   defaultCover: string
   name: string
-}
-
-interface GalleryItem {
-  type: 'image' | 'video'
-  url: string
 }
 
 interface ModalState extends GalleryItem {
@@ -26,7 +24,7 @@ interface ModalState extends GalleryItem {
 const mock: GalleryItem[] = [
   {
     type: 'image',
-    url: zelda
+    url: spider_man
   },
   {
     type: 'image',
