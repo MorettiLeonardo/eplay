@@ -8,6 +8,7 @@ import GlobalCss from './styles'
 
 import RoutesConfig from './routes'
 import Footer from './components/Footer'
+import Cart from './components/Cart'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </div>
         <RoutesConfig />
         <Footer />
+        <Cart />
       </BrowserRouter>
     </Provider>
   )
