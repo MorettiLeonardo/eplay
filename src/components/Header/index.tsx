@@ -32,7 +32,7 @@ const Header = () => {
               <a href="#">Novidades</a>
             </LinkIten>
             <LinkIten>
-              <a href="#">Promoções</a>
+              <Link to="/#on-sale">Promoções</Link>
             </LinkIten>
           </Links>
         </nav>

@@ -1,3 +1,5 @@
+import { HashLink } from 'react-router-hash-link'
+
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -18,7 +20,7 @@ export const Links = styled.ul`
   margin-top: 16px;
 `
 
-export const Link = styled.a`
+export const Link = styled(HashLink)`
   color: ${colors.softGray};
   text-decoration: none;
   margin-right: 8px;
