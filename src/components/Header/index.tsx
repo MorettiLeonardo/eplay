@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-import {
-  HeaderBar,
-  CartButton,
-  LinkIten,
-  Links,
-  Hamburguer,
-  HeaderRow,
-  NavMobile
-} from './styles'
+import * as S from './styles'
 import logo from '../../static/images/logo.svg'
 import carrinho from '../../static/images/carrinho.svg'
 
@@ -29,50 +22,83 @@ const Header = () => {
   }
 
   return (
-    <HeaderBar>
-      <HeaderRow>
+    <S.HeaderBar>
+      <S.HeaderRow>
         <div>
-          <Hamburguer onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <S.Hamburguer onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span />
             <span />
             <span />
-          </Hamburguer>
+          </S.Hamburguer>
           <Link to={'/'}>
             <img src={logo} alt="EPLAY" />
           </Link>
           <nav>
-            <Links>
-              <LinkIten>
-                <Link to={'/categorias'}>Categorias</Link>
-              </LinkIten>
-              <LinkIten>
-                <a href="#">Novidades</a>
-              </LinkIten>
-              <LinkIten>
-                <Link to="/#on-sale">Promoções</Link>
-              </LinkIten>
-            </Links>
+            <S.Links>
+              <S.LinkIten>
+                <Link
+                  title="Clique aqui para acessar a página de Categorias"
+                  to={'/categorias'}
+                >
+                  Categorias
+                </Link>
+              </S.LinkIten>
+              <S.LinkIten>
+                <HashLink
+                  title="Clique aqui para acessar a seção de Em breve"
+                  to={'/#comming-soon'}
+                >
+                  Em breve
+                </HashLink>
+              </S.LinkIten>
+              <S.LinkIten>
+                <HashLink
+                  title="Clique aqui para acessar a seção de Promoções"
+                  to="/#on-sale"
+                >
+                  Promoções
+                </HashLink>
+              </S.LinkIten>
+            </S.Links>
           </nav>
         </div>
-        <CartButton onClick={openCart}>
+        <S.CartButton onClick={openCart}>
           {items.length} <span>- Produto(s)</span>
           <img src={carrinho} alt="Carrinho" />
-        </CartButton>
-      </HeaderRow>
-      <NavMobile className={isMenuOpen ? 'is-open' : ''}>
-        <Links>
-          <LinkIten>
-            <Link to={'/categorias'}>Categorias</Link>
-          </LinkIten>
-          <LinkIten>
-            <a href="#">Novidades</a>
-          </LinkIten>
-          <LinkIten>
-            <Link to="/#on-sale">Promoções</Link>
-          </LinkIten>
-        </Links>
-      </NavMobile>
-    </HeaderBar>
+        </S.CartButton>
+      </S.HeaderRow>
+      <S.NavMobile className={isMenuOpen ? 'is-open' : ''}>
+        <S.Links>
+          <S.LinkIten>
+            <Link
+              title="Clique aqui para acessar a página de Categorias"
+              to={'/categorias'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Categorias
+            </Link>
+          </S.LinkIten>
+          <S.LinkIten>
+            <HashLink
+              title="Clique aqui para acessar a seção de Em breve"
+              to={'/#comming-soon'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Em breve
+            </HashLink>
+          </S.LinkIten>
+          <S.LinkIten>
+            <HashLink
+              title="Clique aqui para acessar a seção de Promoções"
+              to="/#on-sale"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Promoções
+            </HashLink>
+          </S.LinkIten>
+        </S.Links>
+      </S.NavMobile>
+    </S.HeaderBar>
   )
 }
 
