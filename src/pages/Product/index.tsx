@@ -13,7 +13,7 @@ type GameParams = {
 
 const Product = () => {
   const { id } = useParams() as GameParams
-  const { data: game } = useGetGameQuery(id!)
+  const { data: game } = useGetGameQuery(id)
 
   if (!game) {
     return <Loader />
