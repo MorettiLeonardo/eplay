@@ -7,10 +7,6 @@
 </p>
 
 <p align="center">
-    <b>Simple description of what your project do or how to use it</b>
-</p>
-
-<p align="center">
      <a href="PROJECT__URL">📱 Visit this Project</a>
 </p>
 
