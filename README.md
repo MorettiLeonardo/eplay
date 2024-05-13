@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center" style="font-weight: bold;">EPLAY 💻</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <a href="#tech">Technologies</a> • 
+ <a href="#started">Getting Started</a> • 
+ <a href="#contribute">Contribute</a>
+</p>
 
-## Available Scripts
+<p align="center">
+    <b>Simple description of what your project do or how to use it</b>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+     <a href="PROJECT__URL">📱 Visit this Project</a>
+</p>
 
-### `npm start`
+<h2 id="layout">🎨 Layout</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+    <img src="https://portfolio-web-indol-nu.vercel.app/static/media/eplay.9a96d22aaff07e7405a9.png" alt="Image Example" width="400px">
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2 id="technologies">💻 Technologies</h2>
 
-### `npm test`
+- react
+- redux
+- typescript
+- styled components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2 id="started">🚀 Getting started</h2>
 
-### `npm run build`
+<h3>Prerequisites</h3>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [NodeJS](https://github.com/)
+- [Git 2](https://github.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Cloning</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+How to clone your project
 
-### `npm run eject`
+```bash
+git clone https://github.com/MorettiLeonardo/eplay.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h3>Starting</h3>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How to start your project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+cd eplay
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h2 id="contribute">📫 Contribute</h2>
 
-## Learn More
+Here you will explain how other developers can contribute to your project. For example, explaining how can create their branches, which patterns to follow and how to open an pull request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. `git clone https://github.com/MorettiLeonardo/eplay.git`
+3. Follow commit patterns
+4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h3>Documentations that might help</h3>
+
+[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
+
+[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
